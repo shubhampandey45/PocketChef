@@ -15,16 +15,16 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
-// --- LIGHT THEME COLOR SCHEME (Using PocketChef Teal Palette) ---
+// --- LIGHT THEME COLOR SCHEME (Teal & Black) ---
 private val lightScheme = lightColorScheme(
-    primary = primaryLight, // #009688 (Teal)
-    onPrimary = onPrimaryLight, // #FFFFFF (White)
+    primary = primaryLight, // #00ceb7 (Teal)
+    onPrimary = onPrimaryLight, // Black
     primaryContainer = primaryContainerLight,
     onPrimaryContainer = onPrimaryContainerLight,
-    secondary = secondaryLight, // #2D2D2D (Dark Charcoal)
-    onSecondary = onSecondaryLight, // #FFFFFF (White)
-    secondaryContainer = secondaryContainerLight, // #F4F4F2 (Light Grey)
-    onSecondaryContainer = onSecondaryContainerLight, // #2D2D2D (Dark Charcoal)
+    secondary = secondaryLight, // Black
+    onSecondary = onSecondaryLight, // White
+    secondaryContainer = secondaryContainerLight,
+    onSecondaryContainer = onSecondaryContainerLight,
     tertiary = tertiaryLight, // Spiced Orange
     onTertiary = onTertiaryLight,
     tertiaryContainer = tertiaryContainerLight,
@@ -33,10 +33,10 @@ private val lightScheme = lightColorScheme(
     onError = onErrorLight,
     errorContainer = errorContainerLight,
     onErrorContainer = onErrorContainerLight,
-    background = backgroundLight, // #F4F4F2 (Light Grey)
-    onBackground = onBackgroundLight, // #2D2D2D (Dark Charcoal)
-    surface = surfaceLight, // #FFFFFF (White)
-    onSurface = onSurfaceLight, // #2D2D2D (Dark Charcoal)
+    background = backgroundLight, // White
+    onBackground = onBackgroundLight, // Black
+    surface = surfaceLight,
+    onSurface = onSurfaceLight,
     surfaceVariant = surfaceVariantLight,
     onSurfaceVariant = onSurfaceVariantLight,
     outline = outlineLight,
@@ -54,16 +54,16 @@ private val lightScheme = lightColorScheme(
     surfaceContainerHighest = surfaceContainerHighestLight,
 )
 
-// --- DARK THEME COLOR SCHEME (Inverted PocketChef Palette) ---
+// --- DARK THEME COLOR SCHEME (Teal & True Black) ---
 private val darkScheme = darkColorScheme(
-    primary = primaryDark, // #80CBC4 (Light Teal)
-    onPrimary = onPrimaryDark, // #003732 (Deep Teal)
+    primary = primaryDark, // #00ceb7 (Teal)
+    onPrimary = onPrimaryDark, // Black
     primaryContainer = primaryContainerDark,
     onPrimaryContainer = onPrimaryContainerDark,
-    secondary = secondaryDark, // #F4F4F2 (Light Grey)
-    onSecondary = onSecondaryDark, // #2D2D2D (Dark Charcoal)
-    secondaryContainer = secondaryContainerDark, // #2D2D2D (Dark Charcoal)
-    onSecondaryContainer = onSecondaryContainerDark, // #F4F4F2 (Light Grey)
+    secondary = secondaryDark, // White
+    onSecondary = onSecondaryDark, // Black
+    secondaryContainer = secondaryContainerDark,
+    onSecondaryContainer = onSecondaryContainerDark,
     tertiary = tertiaryDark, // Soft Orange
     onTertiary = onTertiaryDark,
     tertiaryContainer = tertiaryContainerDark,
@@ -72,10 +72,10 @@ private val darkScheme = darkColorScheme(
     onError = onErrorDark,
     errorContainer = errorContainerDark,
     onErrorContainer = onErrorContainerDark,
-    background = backgroundDark, // #2D2D2D (Dark Charcoal)
-    onBackground = onBackgroundDark, // #FFFFFF (White)
-    surface = surfaceDark, // #2D2D2D (Dark Charcoal)
-    onSurface = onSurfaceDark, // #FFFFFF (White)
+    background = backgroundDark, // True Black (#000000)
+    onBackground = onBackgroundDark, // White
+    surface = surfaceDark, // Dark Grey (#121212)
+    onSurface = onSurfaceDark, // White
     surfaceVariant = surfaceVariantDark,
     onSurfaceVariant = onSurfaceVariantDark,
     outline = outlineDark,
@@ -93,7 +93,7 @@ private val darkScheme = darkColorScheme(
     surfaceContainerHighest = surfaceContainerHighestDark,
 )
 
-// Placeholder for Typography, since no specifics were provided
+// Placeholder for Typography
 val AppTypography = Typography(
     bodyLarge = TextStyle(
         fontFamily = FontFamily.Default,
